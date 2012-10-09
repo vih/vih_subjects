@@ -1,0 +1,275 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  vih_subjects.features.field.inc: n/a
+#  vih_subjects.views_default.inc: n/a
+#  vih_subjects.features.inc: n/a
+#  vih_subjects.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-10-09 13:43+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: vih_subjects.features.field.inc:888
+msgid "Beskrivelse"
+msgstr ""
+
+#: vih_subjects.features.field.inc:889
+msgid "Billede"
+msgstr ""
+
+#: vih_subjects.features.field.inc:890
+msgid "Dette felt vises på alle fagpakkerne."
+msgstr ""
+
+#: vih_subjects.features.field.inc:891
+msgid "Fast besked"
+msgstr ""
+
+#: vih_subjects.features.field.inc:892 vih_subjects.views_default.inc:1219
+msgid "Kategori"
+msgstr ""
+
+#: vih_subjects.features.field.inc:893
+msgid "Pakke"
+msgstr ""
+
+#: vih_subjects.features.field.inc:894
+msgid "Picture"
+msgstr ""
+
+#: vih_subjects.features.field.inc:895
+msgid "Teaser"
+msgstr ""
+
+#: vih_subjects.features.field.inc:896
+msgid "Tilføj en underviserprofil til faget. Profilen skal omhandle faget."
+msgstr ""
+
+#: vih_subjects.features.field.inc:897
+msgid "Underviser"
+msgstr ""
+
+#: vih_subjects.features.field.inc:898
+msgid "Video"
+msgstr ""
+
+#: vih_subjects.features.field.inc:899
+msgid "Video fra youtube-kanalen"
+msgstr ""
+
+#: vih_subjects.features.inc:34
+msgid "Subject"
+msgstr ""
+
+#: vih_subjects.features.inc:36
+msgid "Use when adding new subjects."
+msgstr ""
+
+#: vih_subjects.features.inc:38
+msgid "Title"
+msgstr ""
+
+#: vih_subjects.views_default.inc:134;262;475;1192
+msgid "Master"
+msgstr ""
+
+#: vih_subjects.views_default.inc:135
+msgid "Rejser - ud at opleve"
+msgstr ""
+
+#: vih_subjects.views_default.inc:136;263;476;1193
+msgid "mere"
+msgstr ""
+
+#: vih_subjects.views_default.inc:137;264;477;1194
+msgid "Udfør"
+msgstr ""
+
+#: vih_subjects.views_default.inc:138;265;478;1195
+msgid "Gendan"
+msgstr ""
+
+#: vih_subjects.views_default.inc:139;266;479;1196
+msgid "Sortér efter"
+msgstr ""
+
+#: vih_subjects.views_default.inc:140;267;480;1197
+msgid "Stigende"
+msgstr ""
+
+#: vih_subjects.views_default.inc:141;268;481;1198
+msgid "Faldende"
+msgstr ""
+
+#: vih_subjects.views_default.inc:142
+msgid "Elementer pr. side"
+msgstr ""
+
+#: vih_subjects.views_default.inc:143;270;483
+msgid "- Alle -"
+msgstr ""
+
+#: vih_subjects.views_default.inc:144;271;484
+msgid "Forskydning"
+msgstr ""
+
+#: vih_subjects.views_default.inc:145;272;485
+msgid "« første"
+msgstr ""
+
+#: vih_subjects.views_default.inc:146;273;486
+msgid "‹ forrige"
+msgstr ""
+
+#: vih_subjects.views_default.inc:147;274;487
+msgid "næste ›"
+msgstr ""
+
+#: vih_subjects.views_default.inc:148;275;488
+msgid "sidste »"
+msgstr ""
+
+#: vih_subjects.views_default.inc:149;1199
+msgid "term"
+msgstr ""
+
+#: vih_subjects.views_default.inc:150;1202
+msgid "Alle"
+msgstr ""
+
+#: vih_subjects.views_default.inc:151
+msgid "Blok"
+msgstr ""
+
+#: vih_subjects.views_default.inc:269;482
+msgid "Antal elementer"
+msgstr ""
+
+#: vih_subjects.views_default.inc:276;492;1216
+msgid "Content pane"
+msgstr ""
+
+#: vih_subjects.views_default.inc:277
+msgid "Faggrupper"
+msgstr ""
+
+#: vih_subjects.views_default.inc:278;494;1218
+msgid "Navn"
+msgstr ""
+
+#: vih_subjects.views_default.inc:279;495;1221
+msgid "View panes"
+msgstr ""
+
+#: vih_subjects.views_default.inc:489
+msgid "<strong>[name]</strong>"
+msgstr ""
+
+#: vih_subjects.views_default.inc:490
+msgid "Block - frontpage"
+msgstr ""
+
+#: vih_subjects.views_default.inc:491
+msgid "Used on the front page to show the frontpage."
+msgstr ""
+
+#: vih_subjects.views_default.inc:493
+msgid "Fagpakker"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1200
+msgid "<h2>[field_terms]</h2>"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1201
+msgid "<strong>[title]</strong>"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1203
+msgid "Blok - sidebar"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1204
+msgid "Unformatted list of subjects"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1205
+msgid "Package pic block"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1206
+msgid "Used to show a picture of all the subjects grouped by subject type."
+msgstr ""
+
+#: vih_subjects.views_default.inc:1207
+msgid "Category pic block"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1208
+msgid "Used to show a picture of all the subjects grouped by subject category."
+msgstr ""
+
+#: vih_subjects.views_default.inc:1209
+msgid "Teacher pic block"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1210
+msgid "Used to show a picture of all the subjects for a particular teacher."
+msgstr ""
+
+#: vih_subjects.views_default.inc:1211
+msgid "Indhold entity referenced from field_course_leader"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1212
+msgid "Indhold entity referenced from field_employee_reference"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1213
+msgid "All subjects"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1214
+msgid "Used for a list with all subjects grouped by category"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1215
+msgid "All subjects grouped by category"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1217
+msgid "Fag"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1220
+msgid "Udgivet"
+msgstr ""
+
+#: vih_subjects.views_default.inc:1222
+msgid "Side"
+msgstr ""
+
+#: vih_subjects.info:0
+msgid "VIH Subjects"
+msgstr ""
+
+#: vih_subjects.info:0
+msgid "Describes the different subjects at Vejle Idrætshøjskole"
+msgstr ""
+
+#: vih_subjects.info:0
+msgid "VIH"
+msgstr ""
+
