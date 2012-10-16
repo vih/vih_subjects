@@ -3,7 +3,7 @@ description = Describes the different subjects at Vejle Idrætshøjskole
 core = 7.x
 package = VIH
 php = 5.2.4
-version = 7.x-0.15
+version = 7.x-0.20
 project = vih_subjects
 dependencies[] = ctools
 dependencies[] = entityreference
@@ -18,7 +18,7 @@ dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_slideshow
-datestamp = 1331278554
+datestamp = 1346221374
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
@@ -60,10 +60,3 @@ features[views_view][] = rejser
 features[views_view][] = subject_categories
 features[views_view][] = subject_packages
 features[views_view][] = subjects
-
-
-; Information added by drush on 2012-08-29
-version = "unknown"
-project = "vih"
-datestamp = "1346221374"
-

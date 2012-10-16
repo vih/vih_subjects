@@ -134,16 +134,13 @@ function vih_subjects_field_default_fields() {
             ),
           ),
           'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'body:value',
-            'property' => 'nid',
             'type' => 'none',
           ),
           'target_bundles' => array(
             'employee_context' => 'employee_context',
           ),
         ),
-        'handler_submit' => 'Skift handler',
+        'handler_submit' => 'Change handler',
         'target_type' => 'node',
       ),
       'translatable' => '0',
@@ -159,6 +156,7 @@ function vih_subjects_field_default_fields() {
           'label' => 'above',
           'module' => 'entityreference',
           'settings' => array(
+            'links' => TRUE,
             'view_mode' => 'teaser',
           ),
           'type' => 'entityreference_entity_view',
@@ -213,7 +211,7 @@ function vih_subjects_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '178',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '1',
