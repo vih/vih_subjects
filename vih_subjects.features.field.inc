@@ -478,7 +478,7 @@ function vih_subjects_field_default_fields() {
           'label' => 'hidden',
           'module' => 'mediafield',
           'settings' => array(
-            'file_view_mode' => 'media_large',
+            'file_view_mode' => 'full',
           ),
           'type' => 'media',
           'weight' => '3',
