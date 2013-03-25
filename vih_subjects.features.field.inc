@@ -189,7 +189,7 @@ function vih_subjects_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '8',
+        'weight' => '7',
       ),
     ),
   );
@@ -273,6 +273,9 @@ function vih_subjects_field_default_fields() {
         'default_image' => 0,
         'file_directory' => 'subjects',
         'file_extensions' => 'png jpg jpeg',
+        'focus' => 0,
+        'focus_lock_ratio' => 0,
+        'focus_min_size' => '',
         'imagecrop' => array(
           'content_width' => 0,
           'subject_overview_thumbs' => 'subject_overview_thumbs',
@@ -702,6 +705,9 @@ function vih_subjects_field_default_fields() {
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png jpg jpeg',
+        'focus' => 0,
+        'focus_lock_ratio' => 0,
+        'focus_min_size' => '',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
@@ -776,7 +782,7 @@ function vih_subjects_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => NULL,
+        'module' => 'field_extrawidgets',
         'settings' => array(
           'display_empty' => 0,
           'formatter' => 'fixed_field_formatter',
@@ -851,6 +857,9 @@ function vih_subjects_field_default_fields() {
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png jpg jpeg',
+        'focus' => 0,
+        'focus_lock_ratio' => 0,
+        'focus_min_size' => '',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
