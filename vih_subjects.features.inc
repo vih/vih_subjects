@@ -22,7 +22,7 @@ function vih_subjects_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function vih_subjects_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**

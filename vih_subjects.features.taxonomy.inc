@@ -13,9 +13,9 @@ function vih_subjects_taxonomy_default_vocabularies() {
       'name' => 'Subject Category',
       'machine_name' => 'subject_category',
       'description' => 'Used for categorization according to the weekly schedule.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -36,9 +36,9 @@ function vih_subjects_taxonomy_default_vocabularies() {
       'name' => 'Subject Packages',
       'machine_name' => 'subject_packages',
       'description' => 'Used to group subjects based on interest.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '9',
+      'weight' => 9,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
