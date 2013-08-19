@@ -2,7 +2,6 @@ name = VIH Subjects
 description = Describes the different subjects at Vejle Idrætshøjskole
 core = 7.x
 package = VIH
-php = 5.2.4
 version = 7.x-0.20
 project = vih_subjects
 dependencies[] = ctools
