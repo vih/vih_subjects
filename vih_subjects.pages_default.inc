@@ -21,7 +21,7 @@ function vih_subjects_default_page_manager_handlers() {
   $handler->conf = array(
     'title' => 'Subjects',
     'no_blocks' => 0,
-    'pipeline' => 'standard',
+    'pipeline' => 'ipe',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -41,6 +41,8 @@ function vih_subjects_default_page_manager_handlers() {
       ),
       'logic' => 'and',
     ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
   );
   $display = new panels_display();
   $display->layout = 'twocol_stacked';
@@ -235,32 +237,34 @@ function vih_subjects_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-3';
     $pane->panel = 'bottom';
-    $pane->type = 'views';
-    $pane->subtype = 'employees_context';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'employees_context-panel_pane_2';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '50',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_1',
       'context' => array(
-        0 => '',
+        0 => 'argument_entity_id:node_1',
       ),
-      'override_title' => 1,
-      'override_title_text' => 'Undervisere',
+      'view_mode' => 'teaser',
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+      'view_settings' => 'fields',
+      'header_type' => 'none',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'vih_box_highlight',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -321,6 +325,52 @@ function vih_subjects_default_page_manager_handlers() {
     $pane->locks = '';
     $display->content['new-5'] = $pane;
     $display->panels['right'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
+    $pane->panel = 'top';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_pictures';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'colorbox',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(
+        'colorbox_node_style' => 'vih_content_quarter',
+        'colorbox_image_style' => 'vih_colorbox_large',
+        'colorbox_gallery' => 'post',
+        'colorbox_gallery_custom' => '',
+        'colorbox_caption' => 'auto',
+        'colorbox_caption_custom' => '',
+      ),
+      'context' => array(),
+      'override_title' => 0,
+      'override_title_text' => '',
+      'view_mode' => NULL,
+      'widget_title' => NULL,
+      'items_per_page' => NULL,
+      'exposed' => array(
+        'sort_by' => NULL,
+        'sort_order' => NULL,
+      ),
+      'use_pager' => NULL,
+      'pager_id' => NULL,
+      'offset' => NULL,
+      'link_to_view' => NULL,
+      'more_link' => NULL,
+      'path' => NULL,
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-6'] = $pane;
+    $display->panels['top'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

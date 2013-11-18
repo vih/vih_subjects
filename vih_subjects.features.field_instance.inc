@@ -24,6 +24,12 @@ function vih_subjects_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
@@ -97,6 +103,12 @@ function vih_subjects_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 7,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -124,7 +136,7 @@ function vih_subjects_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -143,6 +155,12 @@ function vih_subjects_field_default_field_instances() {
           'image_style' => 'sidepicture',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'full' => array(
@@ -226,6 +244,88 @@ function vih_subjects_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-subject-field_pictures'
+  $field_instances['node-subject-field_pictures'] = array(
+    'bundle' => 'subject',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'colorbox',
+        'settings' => array(
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => 'vih_content_quarter',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'vih_content_quarter',
+        ),
+        'type' => 'colorbox',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pictures',
+    'label' => 'Pictures',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'subjects',
+      'file_extensions' => 'png jpg jpeg',
+      'focus' => 0,
+      'focus_lock_ratio' => 0,
+      'focus_min_size' => '',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 'private',
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_internet' => 0,
+          'upload' => 'upload',
+          'youtube' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-subject-field_subject_package'
   $field_instances['node-subject-field_subject_package'] = array(
     'bundle' => 'subject',
@@ -238,6 +338,12 @@ function vih_subjects_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -275,6 +381,12 @@ function vih_subjects_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -317,6 +429,12 @@ function vih_subjects_field_default_field_instances() {
         'type' => 'media',
         'weight' => 3,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -350,7 +468,7 @@ function vih_subjects_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -380,6 +498,12 @@ function vih_subjects_field_default_field_instances() {
         'weight' => 0,
       ),
       'email_textalt' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -450,6 +574,12 @@ function vih_subjects_field_default_field_instances() {
         'type' => 'image',
         'weight' => 0,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'full' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -493,54 +623,6 @@ function vih_subjects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-subject_packages-field_packages_fixed'
-  $field_instances['taxonomy_term-subject_packages-field_packages_fixed'] = array(
-    'bundle' => 'subject_packages',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Dette felt vises på alle fagpakkerne.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'fixed_field',
-        'settings' => array(),
-        'type' => 'fixed_field_formatter',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'fixed_field',
-        'settings' => array(),
-        'type' => 'fixed_field_formatter',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_packages_fixed',
-    'label' => 'Fast besked',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'field_extrawidgets',
-      'settings' => array(
-        'display_empty' => 0,
-        'formatter' => 'fixed_field_formatter',
-        'formatter_settings' => array(),
-      ),
-      'type' => 'field_extrawidgets_read_only',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'taxonomy_term-subject_packages-field_tags_picture'
   $field_instances['taxonomy_term-subject_packages-field_tags_picture'] = array(
     'bundle' => 'subject_packages',
@@ -549,6 +631,12 @@ function vih_subjects_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
@@ -611,11 +699,10 @@ function vih_subjects_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Beskrivelse');
   t('Billede');
-  t('Dette felt vises på alle fagpakkerne.');
-  t('Fast besked');
   t('Kategori');
   t('Pakke');
   t('Picture');
+  t('Pictures');
   t('Teaser');
   t('Tilføj en underviserprofil til faget. Profilen skal omhandle faget.');
   t('Underviser');

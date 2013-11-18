@@ -40,25 +40,6 @@ function vih_subjects_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_packages_fixed'
-  $field_bases['field_packages_fixed'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_packages_fixed',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'fixed_field',
-    'settings' => array(
-      'content' => '<p><strong>Vores fagpakker er eksempler på, hvilke fag du kan vælge, hvis du har specifikke interesser. Det er vigtigt at understrege, at du kan vælge frit mellem fagene i de forskellige perioder.</strong></p>',
-      'text_format' => 'filtered_html',
-    ),
-    'translatable' => 0,
-    'type' => 'fixed_field',
-  );
-
   // Exported field_base: 'field_subject_package'
   $field_bases['field_subject_package'] = array(
     'active' => 1,
