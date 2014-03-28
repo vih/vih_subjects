@@ -93,7 +93,8 @@ function vih_subjects_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_subject';
   $strongarm->value = array(
-    0 => 'revision',
+    0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_subject'] = $strongarm;
 
