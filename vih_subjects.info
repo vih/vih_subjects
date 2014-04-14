@@ -60,3 +60,5 @@ features[views_view][] = rejser
 features[views_view][] = subject_categories
 features[views_view][] = subject_packages
 features[views_view][] = subjects
+
+files[] = vih_subjects.migrate.inc
