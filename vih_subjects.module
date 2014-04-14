@@ -5,3 +5,18 @@
  */
  
 include_once('vih_subjects.features.inc');
+
+/**
+ * Implements hook_migrate_api().
+ *
+ * @return array
+ */
+function vih_subjects_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'VIHSubjectsNode' => array('class_name' => 'VIHSubjectsNode'),
+    ),
+  );
+  return $api;
+}
