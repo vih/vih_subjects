@@ -1470,6 +1470,8 @@ function vih_subjects_views_default_views() {
 
   /* Display: Subject overview */
   $handler = $view->new_display('panel_pane', 'Subject overview', 'panel_pane_4');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'subjects-page';
   $handler->display->display_options['display_description'] = 'Subject thumbnails grouped by category';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'grid';
@@ -1484,6 +1486,37 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Kategori */
+  $handler->display->display_options['fields']['field_terms']['id'] = 'field_terms';
+  $handler->display->display_options['fields']['field_terms']['table'] = 'field_data_field_terms';
+  $handler->display->display_options['fields']['field_terms']['field'] = 'field_terms';
+  $handler->display->display_options['fields']['field_terms']['label'] = '';
+  $handler->display->display_options['fields']['field_terms']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_terms']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_terms']['alter']['text'] = '<h2>[field_terms]</h2>';
+  $handler->display->display_options['fields']['field_terms']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_terms']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Field: Billede */
+  $handler->display->display_options['fields']['field_picture']['id'] = 'field_picture';
+  $handler->display->display_options['fields']['field_picture']['table'] = 'field_data_field_picture';
+  $handler->display->display_options['fields']['field_picture']['field'] = 'field_picture';
+  $handler->display->display_options['fields']['field_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_picture']['settings'] = array(
+    'image_style' => 'subject_overview_thumbs',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<strong>[title]</strong>';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['pane_category']['name'] = 'VIH Subjects';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $translatables['subjects'] = array(
