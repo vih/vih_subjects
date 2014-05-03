@@ -1470,6 +1470,25 @@ function vih_subjects_views_default_views() {
       'label' => 'Indhold: Hvilken lærer? (field_employee_reference)',
     ),
   );
+
+  /* Display: Subject overview */
+  $handler = $view->new_display('panel_pane', 'Subject overview', 'panel_pane_4');
+  $handler->display->display_options['display_description'] = 'Subject thumbnails grouped by category';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_terms',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['pane_category']['name'] = 'VIH Subjects';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $translatables['subjects'] = array(
     t('Master'),
     t('mere'),
@@ -1510,6 +1529,8 @@ function vih_subjects_views_default_views() {
     t('Content entity referenced from field_course_leader'),
     t('Content entity referenced from field_employee_reference'),
     t('VIH Ansatte'),
+    t('Subject overview'),
+    t('Subject thumbnails grouped by category'),
   );
   $export['subjects'] = $view;
 
