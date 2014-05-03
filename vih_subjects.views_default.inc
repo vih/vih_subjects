@@ -260,10 +260,11 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
   $handler->display->display_options['fields']['edit_term']['label'] = '';
   $handler->display->display_options['fields']['edit_term']['element_label_colon'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight_1']['id'] = 'weight_1';
   $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'self';
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -277,7 +278,7 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Faggrupper';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Draggableviews: Taxonomy term */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
@@ -377,10 +378,11 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'self';
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -482,7 +484,7 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Draggableviews: Taxonomy term */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
@@ -641,11 +643,12 @@ function vih_subjects_views_default_views() {
     'image_style' => 'subject_overview_thumbs',
     'image_link' => '',
   );
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight_1']['id'] = 'weight_1';
   $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight_1']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'self';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -785,11 +788,12 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'self';
   /* Sort criterion: Content: Kategori (field_terms) */
   $handler->display->display_options['sorts']['field_terms_tid']['id'] = 'field_terms_tid';
   $handler->display->display_options['sorts']['field_terms_tid']['table'] = 'field_data_field_terms';
@@ -1125,11 +1129,12 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight_1']['id'] = 'weight_1';
   $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight_1']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'self';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -1149,6 +1154,8 @@ function vih_subjects_views_default_views() {
     'subject' => 'subject',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  $handler->display->display_options['pane_category']['name'] = 'VIH Subjects';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['link_to_view'] = '1';
 
   /* Display: Side */
@@ -1329,11 +1336,12 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Draggableviews: Weight */
   $handler->display->display_options['sorts']['weight_1']['id'] = 'weight_1';
   $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight_1']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'self';
   /* Sort criterion: Content: Kategori (field_terms) */
   $handler->display->display_options['sorts']['field_terms_tid']['id'] = 'field_terms_tid';
   $handler->display->display_options['sorts']['field_terms_tid']['table'] = 'field_data_field_terms';
@@ -1493,9 +1501,10 @@ function vih_subjects_views_default_views() {
     t('Navn'),
     t('Kategori'),
     t('Published'),
-    t('View panes'),
+    t('VIH Subjects'),
     t('Side'),
     t('Subject Category Pane'),
+    t('View panes'),
     t('Teacher pane'),
     t('Underviser i'),
     t('Content entity referenced from field_course_leader'),
