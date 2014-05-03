@@ -1362,6 +1362,8 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['arguments']['field_subject_package_tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_subject_package_tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_subject_package_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['pane_category']['name'] = 'VIH Subjects';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'field_subject_package_tid' => array(
       'type' => 'context',
@@ -1518,7 +1520,6 @@ function vih_subjects_views_default_views() {
     t('VIH Subjects'),
     t('Side'),
     t('Subject Category Pane'),
-    t('View panes'),
     t('Teacher pane'),
     t('Underviser i'),
     t('Content entity referenced from field_course_leader'),
