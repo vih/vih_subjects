@@ -15,8 +15,8 @@ function vih_subjects_user_default_permissions() {
     'name' => 'create subject content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
@@ -26,7 +26,7 @@ function vih_subjects_user_default_permissions() {
     'name' => 'delete any subject content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
+      'office' => 'office',
     ),
     'module' => 'node',
   );
@@ -36,8 +36,8 @@ function vih_subjects_user_default_permissions() {
     'name' => 'delete own subject content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
@@ -47,8 +47,8 @@ function vih_subjects_user_default_permissions() {
     'name' => 'edit any subject content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
@@ -58,8 +58,8 @@ function vih_subjects_user_default_permissions() {
     'name' => 'edit own subject content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
