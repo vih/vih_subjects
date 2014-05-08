@@ -233,7 +233,7 @@ function vih_subjects_field_default_field_instances() {
         ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 0,
+        'manualcrop_enable' => 1,
         'manualcrop_inline_crop' => 0,
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
@@ -246,6 +246,7 @@ function vih_subjects_field_default_field_instances() {
         'manualcrop_styles_list' => array(
           'sidepicture' => 'sidepicture',
           'subject_overview_thumbs' => 'subject_overview_thumbs',
+          'subject_packages_frontpage' => 'subject_packages_frontpage',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
