@@ -140,8 +140,8 @@ function vih_subjects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-subject-field_picture'
-  $field_instances['node-subject-field_picture'] = array(
+  // Exported field_instance: 'node-subject-field_featured_image'
+  $field_instances['node-subject-field_featured_image'] = array(
     'bundle' => 'subject',
     'default_value' => NULL,
     'deleted' => 0,
@@ -195,7 +195,7 @@ function vih_subjects_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_picture',
+    'field_name' => 'field_featured_image',
     'label' => 'Picture',
     'required' => 0,
     'settings' => array(

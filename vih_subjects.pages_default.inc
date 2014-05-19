@@ -327,7 +327,7 @@ function vih_subjects_default_page_manager_handlers() {
     $pane->pid = 'new-62b60054-2e6e-441d-89ef-8867196f4158';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_picture';
+    $pane->subtype = 'node:field_featured_image';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
