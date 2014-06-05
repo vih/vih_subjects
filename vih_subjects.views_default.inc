@@ -299,6 +299,8 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['fields']['edit_term']['field'] = 'edit_term';
   $handler->display->display_options['fields']['edit_term']['label'] = '';
   $handler->display->display_options['fields']['edit_term']['element_label_colon'] = FALSE;
+  $handler->display->display_options['pane_category']['name'] = 'VIH Admin';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $translatables['subject_categories'] = array(
     t('Master'),
     t('mere'),
@@ -318,7 +320,7 @@ function vih_subjects_views_default_views() {
     t('Faggrupper'),
     t('more'),
     t('Name'),
-    t('View panes'),
+    t('VIH Admin'),
   );
   $export['subject_categories'] = $view;
 
