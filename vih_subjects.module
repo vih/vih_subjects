@@ -16,6 +16,7 @@ function vih_subjects_migrate_api() {
     'api' => 2,
     'migrations' => array(
       'VIHSubjectsNode' => array('class_name' => 'VIHSubjectsNode'),
+      'VIHSubjectsPackageTaxonomy' => array('class_name' => 'VIHSubjectsPackageTaxonomy'),
     ),
   );
   return $api;

@@ -650,8 +650,7 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight_1']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'subject_categories:panel_pane_1';
- 	$handler->display->display_options['sorts']['weight_1']['draggableviews_setting_new_items_bottom_list'] = 1;
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'self';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';

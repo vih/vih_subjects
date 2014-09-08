@@ -11,7 +11,6 @@ class VIHSubjectsNode extends VIHMigration {
     $this->arguments = $arguments;
     parent::__construct();
     $this->description = t('Import subject nodes.');
-    //$this->dependencies = array('VIHShortCourseBasicProduct');
 
     // Create a map object for tracking the relationships between source rows
     $this->map = new MigrateSQLMap($this->machineName,
@@ -81,6 +80,53 @@ class VIHSubjectsNode extends VIHMigration {
     $columns[7] = array('package', 'Package');
     $columns[8] = array('featured_image', 'Featured Image');
     $columns[9] = array('images', 'Images');
+    return $columns;
+  }
+}
+
+class VIHSubjectsPackageTaxonomy extends VIHMigration {
+
+  public function __construct(array $arguments) {
+    $this->arguments = $arguments;
+    parent::__construct();
+    $this->description = t('Import subject package taxonomies.');
+
+    // Create a map object for tracking the relationships between source rows
+    $this->map = new MigrateSQLMap($this->machineName,
+      array(
+        'id' => array(
+          'type' => 'int',
+          'not null' => TRUE,
+        ),
+      ),
+      MigrateDestinationTerm::getKeySchema()
+    );
+
+    // Create a MigrateSource object.
+    $this->source = new MigrateSourceCSV(drupal_get_path('module', 'vih_subjects') . '/import/package.csv', $this->csvcolumns(), array('header_rows' => 1));
+
+    $this->destination = new MigrateDestinationTerm('subject_packages');
+
+    $this->addFieldMapping('uid', 'uid')->defaultValue(1);
+
+    $this->addFieldMapping('name', 'name');
+
+    $this->addFieldMapping('description', 'description');
+    $this->addFieldMapping('description:format')
+      ->defaultValue('panopoly_wysiwyg_text');
+      
+    $this->addFieldMapping('field_tags_picture', 'image');
+    $this->addFieldMapping('field_tags_picture:file_replace')
+      ->defaultValue(FILE_EXISTS_REPLACE);
+    $this->addFieldMapping('field_tags_picture:source_dir')
+      ->defaultValue(drupal_get_path('module', 'vih_subjects') . '/import/images');
+  }
+
+  function csvcolumns() {
+    $columns[0] = array('id', 'Id');
+    $columns[1] = array('name', 'Name');
+    $columns[2] = array('description', 'Description');
+    $columns[3] = array('image', 'Image');
     return $columns;
   }
 }
