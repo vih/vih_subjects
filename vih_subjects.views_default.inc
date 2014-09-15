@@ -347,16 +347,10 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
   $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
   $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Antal elementer';
-  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
-  $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
-  $handler->display->display_options['pager']['options']['tags']['first'] = '« første';
-  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ forrige';
-  $handler->display->display_options['pager']['options']['tags']['next'] = 'næste ›';
-  $handler->display->display_options['pager']['options']['tags']['last'] = 'sidste »';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '5';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Taxonomy term: Billede */
   $handler->display->display_options['fields']['field_tags_picture']['id'] = 'field_tags_picture';
@@ -392,50 +386,6 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'subject_packages' => 'subject_packages',
   );
-
-  /* Display: Overview block */
-  $handler = $view->new_display('block', 'Overview block', 'block_4');
-  $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'subject-packages';
-  $handler->display->display_options['display_description'] = 'Used on the front page to show the frontpage.';
-  $handler->display->display_options['defaults']['cache'] = FALSE;
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '518400';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '518400';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['grouping'] = '';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Taxonomy term: Billede */
-  $handler->display->display_options['fields']['field_tags_picture']['id'] = 'field_tags_picture';
-  $handler->display->display_options['fields']['field_tags_picture']['table'] = 'field_data_field_tags_picture';
-  $handler->display->display_options['fields']['field_tags_picture']['field'] = 'field_tags_picture';
-  $handler->display->display_options['fields']['field_tags_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_tags_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_tags_picture']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_tags_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_tags_picture']['settings'] = array(
-    'image_style' => 'subject_packages_frontpage',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_tags_picture']['group_column'] = 'fid';
-  /* Field: Taxonomy term: Name */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['label'] = '';
-  $handler->display->display_options['fields']['name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['name']['alter']['text'] = '<strong>[name]</strong>';
-  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  $handler->display->display_options['block_caching'] = '8';
 
   /* Display: Admin pane */
   $handler = $view->new_display('panel_pane', 'Admin pane', 'panel_pane_1');
@@ -555,19 +505,10 @@ function vih_subjects_views_default_views() {
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
-    t('Antal elementer'),
-    t('- Alle -'),
-    t('Forskydning'),
-    t('« første'),
-    t('‹ forrige'),
-    t('næste ›'),
-    t('sidste »'),
     t('<strong>[name]</strong>'),
-    t('Overview block'),
-    t('Used on the front page to show the frontpage.'),
-    t('more'),
     t('Admin pane'),
     t('Fagpakker'),
+    t('more'),
     t('Name'),
     t('VIH Admin'),
     t('Overview Pane'),
