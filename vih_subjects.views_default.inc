@@ -378,7 +378,8 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'self';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'subject_packages:panel_pane_1';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -591,7 +592,8 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight_1']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'self';
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'subject_categories:panel_pane_1';
+  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
