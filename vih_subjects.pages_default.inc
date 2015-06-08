@@ -385,28 +385,6 @@ function vih_subjects_default_page_manager_handlers() {
     $pane->uuid = '5a03f497-764a-408a-bb1d-311423850c9d';
     $display->content['new-5a03f497-764a-408a-bb1d-311423850c9d'] = $pane;
     $display->panels['right'][0] = 'new-5a03f497-764a-408a-bb1d-311423850c9d';
-    $pane = new stdClass();
-    $pane->pid = 'new-19277e4b-e0ed-481a-bb76-396eb623c23b';
-    $pane->panel = 'top';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'full',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-      'style' => 'quote',
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '19277e4b-e0ed-481a-bb76-396eb623c23b';
-    $display->content['new-19277e4b-e0ed-481a-bb76-396eb623c23b'] = $pane;
-    $display->panels['top'][0] = 'new-19277e4b-e0ed-481a-bb76-396eb623c23b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
