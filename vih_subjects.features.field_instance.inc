@@ -594,7 +594,8 @@ function vih_subjects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-subject_category-field_category_picture'
+  // Exported field_instance:
+  // 'taxonomy_term-subject_category-field_category_picture'
   $field_instances['taxonomy_term-subject_category-field_category_picture'] = array(
     'bundle' => 'subject_category',
     'deleted' => 0,
@@ -672,7 +673,8 @@ function vih_subjects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-subject_packages-field_tags_picture'
+  // Exported field_instance:
+  // 'taxonomy_term-subject_packages-field_tags_picture'
   $field_instances['taxonomy_term-subject_packages-field_tags_picture'] = array(
     'bundle' => 'subject_packages',
     'deleted' => 0,

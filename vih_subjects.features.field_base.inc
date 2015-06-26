@@ -17,7 +17,6 @@ function vih_subjects_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_category_picture',
-    'foreign keys' => array(),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -40,7 +39,6 @@ function vih_subjects_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_subject_package',
-    'foreign keys' => array(),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -67,7 +65,6 @@ function vih_subjects_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_subject_teaser',
-    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -87,7 +84,6 @@ function vih_subjects_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_tags_picture',
-    'foreign keys' => array(),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -110,7 +106,6 @@ function vih_subjects_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_terms',
-    'foreign keys' => array(),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
