@@ -31,7 +31,7 @@ function vih_subjects_node_info() {
     'subject' => array(
       'name' => t('Subject'),
       'base' => 'node_content',
-      'description' => t('Use when adding new subjects.'),
+      'description' => t('Use <em>subject</em> when adding new subjects for the <em>long course</em>.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
