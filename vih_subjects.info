@@ -1,5 +1,5 @@
 name = VIH Subjects
-description = Describes the different subjects at Vejle Idrætshøjskole
+description = Handles subjects for long courses
 core = 7.x
 package = VIH
 version = 7.x-0.20
