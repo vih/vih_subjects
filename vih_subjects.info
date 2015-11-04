@@ -42,6 +42,7 @@ features[field_instance][] = taxonomy_term-subject_category-field_category_pictu
 features[field_instance][] = taxonomy_term-subject_packages-field_tags_picture
 features[node][] = subject
 features[page_manager_handlers][] = node_view_panel_context_2
+features[page_manager_handlers][] = term_view_panel_context
 features[taxonomy][] = subject_category
 features[taxonomy][] = subject_packages
 features[user_permission][] = create subject content
