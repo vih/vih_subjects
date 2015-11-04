@@ -390,5 +390,184 @@ function vih_subjects_default_page_manager_handlers() {
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_2'] = $handler;
 
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'term_view_panel_context';
+  $handler->task = 'term_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Subject Packages',
+    'no_blocks' => 0,
+    'pipeline' => 'ipe',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'term_vocabulary',
+          'settings' => array(
+            'vids' => array(
+              4 => '4',
+            ),
+          ),
+          'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+  );
+  $display = new panels_display();
+  $display->layout = 'radix_boxton';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+      'contentmain' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'b9603a6a-769a-447f-bd97-00cedeb9d30c';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-1f4c2687-e74c-4957-92df-94aaec1ef3a7';
+  $pane->panel = 'contentmain';
+  $pane->type = 'fieldable_panels_pane';
+  $pane->subtype = 'fpid:13';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_mode' => 'full',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'vih_box_highlight',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '1f4c2687-e74c-4957-92df-94aaec1ef3a7';
+  $display->content['new-1f4c2687-e74c-4957-92df-94aaec1ef3a7'] = $pane;
+  $display->panels['contentmain'][0] = 'new-1f4c2687-e74c-4957-92df-94aaec1ef3a7';
+  $pane = new stdClass();
+  $pane->pid = 'new-a938875a-285a-47cc-abdf-2ebd6f319bca';
+  $pane->panel = 'contentmain';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'taxonomy_term:field_category_picture';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'image',
+    'formatter_settings' => array(
+      'image_style' => 'large',
+      'image_link' => '',
+    ),
+    'context' => 'argument_term_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+    'view_mode' => NULL,
+    'widget_title' => NULL,
+    'items_per_page' => NULL,
+    'exposed' => array(
+      'sort_by' => NULL,
+      'sort_order' => NULL,
+    ),
+    'use_pager' => NULL,
+    'pager_id' => NULL,
+    'offset' => NULL,
+    'link_to_view' => NULL,
+    'more_link' => NULL,
+    'path' => NULL,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = '';
+  $pane->uuid = 'a938875a-285a-47cc-abdf-2ebd6f319bca';
+  $display->content['new-a938875a-285a-47cc-abdf-2ebd6f319bca'] = $pane;
+  $display->panels['contentmain'][1] = 'new-a938875a-285a-47cc-abdf-2ebd6f319bca';
+  $pane = new stdClass();
+  $pane->pid = 'new-12f45306-c2db-4909-8c09-37f8678640ee';
+  $pane->panel = 'contentmain';
+  $pane->type = 'term_description';
+  $pane->subtype = 'term_description';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => 'argument_term_1',
+    'override_title' => 1,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = '';
+  $pane->uuid = '12f45306-c2db-4909-8c09-37f8678640ee';
+  $display->content['new-12f45306-c2db-4909-8c09-37f8678640ee'] = $pane;
+  $display->panels['contentmain'][2] = 'new-12f45306-c2db-4909-8c09-37f8678640ee';
+  $pane = new stdClass();
+  $pane->pid = 'new-31fc9705-c6b4-4ff2-8174-cd57415b724b';
+  $pane->panel = 'contentmain';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'subjects-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => array(
+      0 => 'argument_term_1',
+    ),
+    'view_mode' => 'full',
+    'widget_title' => NULL,
+    'items_per_page' => NULL,
+    'exposed' => array(
+      'sort_by' => NULL,
+      'sort_order' => NULL,
+    ),
+    'use_pager' => NULL,
+    'pager_id' => NULL,
+    'offset' => NULL,
+    'link_to_view' => NULL,
+    'more_link' => NULL,
+    'path' => NULL,
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $pane->uuid = '31fc9705-c6b4-4ff2-8174-cd57415b724b';
+  $display->content['new-31fc9705-c6b4-4ff2-8174-cd57415b724b'] = $pane;
+  $display->panels['contentmain'][3] = 'new-31fc9705-c6b4-4ff2-8174-cd57415b724b';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $export['term_view_panel_context'] = $handler;
+
   return $export;
 }
