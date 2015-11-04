@@ -411,8 +411,8 @@ function vih_subjects_default_page_manager_handlers() {
         0 => array(
           'name' => 'term_vocabulary',
           'settings' => array(
-            'vids' => array(
-              4 => '4',
+            'machine_name' => array(
+              'subject_packages' => 'subject_packages',
             ),
           ),
           'context' => 'argument_term_1',
@@ -514,6 +514,7 @@ function vih_subjects_default_page_manager_handlers() {
     'context' => 'argument_term_1',
     'override_title' => 1,
     'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
