@@ -626,8 +626,8 @@ function vih_subjects_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
 
-  /* Display: Blok - sidebar */
-  $handler = $view->new_display('block', 'Blok - sidebar', 'block_1');
+  /* Display: Sidebar list block */
+  $handler = $view->new_display('block', 'Sidebar list block', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['display_description'] = 'Unformatted list of subjects';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -915,8 +915,8 @@ function vih_subjects_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
 
-  /* Display: All subjects */
-  $handler = $view->new_display('block', 'All subjects', 'block_5');
+  /* Display: All subjects block */
+  $handler = $view->new_display('block', 'All subjects block', 'block_5');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'subjects-page';
   $handler->display->display_options['display_description'] = 'Used for a list with all subjects grouped by category';
@@ -970,8 +970,8 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['block_description'] = 'All subjects grouped by category';
   $handler->display->display_options['block_caching'] = '8';
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  /* Display: Admin pane */
+  $handler = $view->new_display('panel_pane', 'Admin pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Fag';
   $handler->display->display_options['defaults']['cache'] = FALSE;
@@ -1094,12 +1094,12 @@ function vih_subjects_views_default_views() {
     'subject' => 'subject',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  $handler->display->display_options['pane_category']['name'] = 'VIH Subjects';
+  $handler->display->display_options['pane_category']['name'] = 'VIH Admin';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['link_to_view'] = '1';
 
-  /* Display: Side */
-  $handler = $view->new_display('page', 'Side', 'page_1');
+  /* Display: Admin page */
+  $handler = $view->new_display('page', 'Admin page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Fag';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -1391,7 +1391,7 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['pane_category']['name'] = 'VIH Ansatte';
+  $handler->display->display_options['pane_category']['name'] = 'VIH Employees';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
   $handler->display->display_options['allow']['items_per_page'] = 0;
@@ -1413,8 +1413,8 @@ function vih_subjects_views_default_views() {
     ),
   );
 
-  /* Display: Subject overview */
-  $handler = $view->new_display('panel_pane', 'Subject overview', 'panel_pane_4');
+  /* Display: Subject overview pane */
+  $handler = $view->new_display('panel_pane', 'Subject overview pane', 'panel_pane_4');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'subjects-page';
   $handler->display->display_options['display_description'] = 'Subject thumbnails grouped by category';
@@ -1476,7 +1476,7 @@ function vih_subjects_views_default_views() {
     t('<h2>[field_terms]</h2>'),
     t('<strong>[title]</strong>'),
     t('Alle'),
-    t('Blok - sidebar'),
+    t('Sidebar list block'),
     t('Unformatted list of subjects'),
     t('more'),
     t('Package pic block'),
@@ -1487,23 +1487,24 @@ function vih_subjects_views_default_views() {
     t('Used to show a picture of all the subjects for a particular teacher.'),
     t('Indhold entity referenced from field_course_leader'),
     t('Indhold entity referenced from field_employee_reference'),
-    t('All subjects'),
+    t('All subjects block'),
     t('Used for a list with all subjects grouped by category'),
     t('All subjects grouped by category'),
-    t('Content pane'),
+    t('Admin pane'),
     t('Fag'),
     t('Navn'),
     t('Kategori'),
     t('Published'),
-    t('VIH Subjects'),
-    t('Side'),
+    t('VIH Admin'),
+    t('Admin page'),
     t('Subject Category Pane'),
+    t('VIH Subjects'),
     t('Teacher pane'),
     t('Underviser i'),
     t('Content entity referenced from field_course_leader'),
     t('Content entity referenced from field_employee_reference'),
-    t('VIH Ansatte'),
-    t('Subject overview'),
+    t('VIH Employees'),
+    t('Subject overview pane'),
     t('Subject thumbnails grouped by category'),
   );
   $export['subjects'] = $view;

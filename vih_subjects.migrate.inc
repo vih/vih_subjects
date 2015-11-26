@@ -114,7 +114,7 @@ class VIHSubjectsPackageTaxonomy extends VIHMigration {
     $this->addFieldMapping('description', 'description');
     $this->addFieldMapping('description:format')
       ->defaultValue('panopoly_wysiwyg_text');
-      
+
     $this->addFieldMapping('field_tags_picture', 'image');
     $this->addFieldMapping('field_tags_picture:file_replace')
       ->defaultValue(FILE_EXISTS_REPLACE);

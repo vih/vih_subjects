@@ -313,7 +313,9 @@ function vih_subjects_default_page_manager_handlers() {
   );
   $pane->cache = array();
   $pane->style = array(
-    'settings' => NULL,
+    'settings' => array(
+      'style' => 'alternate',
+    ),
     'style' => 'vih_box_highlight',
   );
   $pane->css = array();
@@ -397,7 +399,7 @@ function vih_subjects_default_page_manager_handlers() {
   $handler->task = 'term_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = 0;
+  $handler->weight = -29;
   $handler->conf = array(
     'title' => 'Subject Packages',
     'no_blocks' => 0,
@@ -518,7 +520,11 @@ function vih_subjects_default_page_manager_handlers() {
   );
   $pane->cache = array();
   $pane->style = array(
-    'settings' => NULL,
+    'settings' => array(
+      'style' => 'inverted',
+      'cta' => 'cta-button',
+    ),
+    'style' => 'text_widget',
   );
   $pane->css = array();
   $pane->extras = array();
