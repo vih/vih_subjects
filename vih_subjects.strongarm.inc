@@ -50,16 +50,16 @@ function vih_subjects_strongarm() {
           'weight' => '0',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '11',
         ),
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '12',
         ),
       ),
       'display' => array(),

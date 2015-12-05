@@ -229,7 +229,6 @@ function vih_subjects_field_default_field_instances() {
           'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 0,
           'upload' => 'upload',
-          'youtube' => 0,
         ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
@@ -239,10 +238,7 @@ function vih_subjects_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_keyboard' => 1,
         'manualcrop_maximize_default_crop_area' => 0,
-        'manualcrop_require_cropping' => array(
-          'sidepicture' => 'sidepicture',
-          'subject_overview_thumbs' => 'subject_overview_thumbs',
-        ),
+        'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
           'sidepicture' => 'sidepicture',
           'subject_overview_thumbs' => 'subject_overview_thumbs',
@@ -250,7 +246,6 @@ function vih_subjects_field_default_field_instances() {
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
-        'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
       'weight' => 5,
