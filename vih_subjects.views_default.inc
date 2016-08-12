@@ -842,13 +842,11 @@ function vih_subjects_views_default_views() {
   $handler->display->display_options['relationships']['field_course_leader_target_id']['id'] = 'field_course_leader_target_id';
   $handler->display->display_options['relationships']['field_course_leader_target_id']['table'] = 'field_data_field_course_leader';
   $handler->display->display_options['relationships']['field_course_leader_target_id']['field'] = 'field_course_leader_target_id';
-  $handler->display->display_options['relationships']['field_course_leader_target_id']['label'] = 'Indhold entity referenced from field_course_leader';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['relationship'] = 'field_course_leader_target_id';
-  $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Field: Billede */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -1485,8 +1483,6 @@ function vih_subjects_views_default_views() {
     t('Used to show a picture of all the subjects grouped by subject category.'),
     t('Teacher pic block'),
     t('Used to show a picture of all the subjects for a particular teacher.'),
-    t('Indhold entity referenced from field_course_leader'),
-    t('Indhold entity referenced from field_employee_reference'),
     t('All subjects block'),
     t('Used for a list with all subjects grouped by category'),
     t('All subjects grouped by category'),
